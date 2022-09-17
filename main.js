@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
-import { subtract } from './subtract.js';
+import { subtract } from './math.js';
 
 console.log(subtract(3,1));
 document.querySelector('#app').innerHTML = `
