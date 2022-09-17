@@ -13,6 +13,6 @@ describe('add', function() {
 });
 describe('es numero', function() {
     it('es numero', function() {
-        assert.equal(isInteger('f'), true);
+        assert.equal(isInteger('f'), false);
     })
 })
