@@ -19,5 +19,10 @@ pipeline {
                 sh 'npm run test'
             }
         }
+        stage('Run algo') {
+            steps {
+                build wait: false, job: 'parameterized', parameters: [string(name: 'ROOT_ID', value: '$BUILD_ID')]
+            }
+        }
     }
 }
