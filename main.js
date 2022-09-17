@@ -1,7 +1,9 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
+import { subtract } from './subtract.js';
 
+console.log(subtract(3,1));
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
